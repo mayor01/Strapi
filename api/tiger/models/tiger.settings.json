@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tigers",
+  "info": {
+    "name": "Tiger"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Age": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "enumeration",
+      "enum": [
+        "Africa",
+        "Americas",
+        "Europe",
+        "Asia"
+      ]
+    },
+    "Weight": {
+      "type": "integer"
+    },
+    "Length": {
+      "type": "integer"
+    }
+  }
+}

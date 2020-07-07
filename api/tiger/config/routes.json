@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tigers",
+      "handler": "tiger.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tigers/count",
+      "handler": "tiger.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tigers/:id",
+      "handler": "tiger.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tigers",
+      "handler": "tiger.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tigers/:id",
+      "handler": "tiger.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tigers/:id",
+      "handler": "tiger.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
